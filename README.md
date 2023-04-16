@@ -19,3 +19,14 @@
 
 ###### Consume a message
 > kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic javatechie
+
+###### API Call
+```
+curl --location --request POST 'http://localhost:9192/publish' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "id": 101,
+    "name": "Algo Book" 
+}'```
+
+
